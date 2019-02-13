@@ -1,6 +1,15 @@
+format_version: 3
 environments:
-  - ci
-  - test
-  - qa
-  - stable
-  - prod
+  ci:
+    environment_variables:
+      FOO: bar
+  test:
+    environment_variables:
+      FOO: bar
+  qa:
+    environment_variables:
+      FOO: bar
+  stable:
+    environment_variables:
+      FOO: bar
+  prod:
