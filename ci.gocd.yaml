@@ -9,7 +9,7 @@ environments:
   qa:
     environment_variables:
       FOO: bar
-  staging:
+  stable:
     environment_variables:
       FOO: bar
   prod:
