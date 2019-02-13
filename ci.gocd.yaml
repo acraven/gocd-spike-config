@@ -1,0 +1,6 @@
+environments:
+  - ci
+  - test
+  - qa
+  - stable
+  - prod
