@@ -15,3 +15,19 @@ environments:
   prod:
     environment_variables:
       FOO: bar
+pipelines:
+  the-pipe:
+    group: simple
+    materials:
+      repo:
+        git: https://github.com/acraven/dockerised-dotnet-core-api.git
+    stages:
+      - build: # name of stage
+          jobs:
+            build: # name of the job
+              tasks:
+                - exec: # indicates type of task
+                    command: /bin/bash
+                    arguments:
+                      "-c docker --version"
+                      
