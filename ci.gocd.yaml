@@ -27,7 +27,4 @@ pipelines:
             build: # name of the job
               tasks:
                 - exec: # indicates type of task
-                    command: /bin/bash
-                    arguments:
-                      "-c docker --version"
-                      
+                    command: /bin/bash                      
